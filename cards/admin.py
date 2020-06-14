@@ -12,7 +12,7 @@ def report(ModelAdmin, request, queryset):       # queryset : return checked ite
 
 @admin.register(Card)
 class CardAdmin(admin.ModelAdmin):
-    search_fields = ('name', 'context', 'owner__username')        # dangerous when db has many data
+    search_fields = ('name', 'context', 'owner__username')
     date_hierarchy = 'created'
     list_display = ('id', 'name', 'context', 'is_reported', '_owner')
     list_filter = ('name', 'is_reported')

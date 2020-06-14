@@ -137,7 +137,7 @@ REST_FRAMEWORK = {
     ],
     'DEFAULT_THROTTLE_RATES': {
         'anon': '100/day',
-        'user': '5/minute',     # limit a user to a maximum of 3 requests per minute
+        'user': '5/minute',     # limit a user to a maximum of 5 requests per minute
     }
 }
 
